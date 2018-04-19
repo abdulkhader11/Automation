@@ -7,6 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -65,7 +66,16 @@ public class Cart {
 		
 		driver.findElement(By.xpath(".//*[@id='cart_navigation']/button")).click();
 		
-		//driver.quit();
+		driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[2]/a")).click();
+	
+		driver.findElement(By.xpath(".//*[@id='selectProductSort']/option[3]")).click();
+		
+		System.out.println("clicked on highest first");
+		
+		Thread.sleep(2000);
+		
+		
+		
 		
 	}
 	
