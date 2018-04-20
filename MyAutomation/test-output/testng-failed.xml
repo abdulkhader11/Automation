@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CheckBoxPractice">
+      <class name="UploadFile">
         <methods>
-          <include name="chkboxAndScreenshot"/>
+          <include name="UploadDocument"/>
         </methods>
-      </class> <!-- CheckBoxPractice -->
+      </class> <!-- UploadFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
