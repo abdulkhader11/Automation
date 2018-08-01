@@ -11,6 +11,7 @@ public class UploadFile {
 		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		   
+		
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/test/upload/");
 		
@@ -19,6 +20,8 @@ public class UploadFile {
 		
 		driver.findElement(By.xpath(".//*[@id='terms']")).click();
 		driver.findElement(By.xpath(".//*[@id='submitbutton']")).click();
+		
+		
 	}
 	
 	

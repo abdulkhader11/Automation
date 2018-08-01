@@ -23,14 +23,14 @@ public class AutomationForCart {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		
+	
 		driver.get("http://automationpractice.com/");
 		Thread.sleep(1000);		
 		
 		driver.findElement(By.xpath(".//a[@class='login']")).click();
 		driver.findElement(By.xpath(".//input[@id='email']")).sendKeys("ap.math90@gmail.com");
-		driver.findElement(By.xpath(".//input[@id='passwd']")).sendKeys("  password");
-		
+		driver.findElement(By.xpath(".//input[@id='passwd']")).sendKeys("pqu772_90");
+		driver.findElement(By.xpath(".//*[@id='SubmitLogin']")).click();
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("E:\\Selenium\\screenshot1.png"), true);	
 	}
@@ -39,7 +39,7 @@ public class AutomationForCart {
 	public void Login()throws InterruptedException, Throwable {
 		
 		
-		driver.findElement(By.xpath(".//button[@id='SubmitLogin']")).click();
+		//driver.findElement(By.xpath(".//*[@id='SubmitLogin']")).click();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		driver.findElement(By.xpath(".//a[@title='Women']")).click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);

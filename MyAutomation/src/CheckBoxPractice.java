@@ -33,6 +33,8 @@ public class CheckBoxPractice {
 		}
 		else {
 			
+			
+			
 			option1.click();
 			System.out.println("Check box Toggled OFF and Clicked");
 			
