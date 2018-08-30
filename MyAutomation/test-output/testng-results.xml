@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18646" started-at="2018-08-01T06:34:07Z" finished-at="2018-08-01T06:34:26Z">
+  <suite name="Suite" duration-ms="59" started-at="2018-08-30T09:03:24Z" finished-at="2018-08-30T09:03:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18646" started-at="2018-08-01T06:34:07Z" finished-at="2018-08-01T06:34:26Z">
-      <class name="Alerts">
-        <test-method status="PASS" signature="HandleAlerts()[pri:0, instance:Alerts@1e965684]" name="HandleAlerts" duration-ms="18616" started-at="2018-08-01T06:34:07Z" finished-at="2018-08-01T06:34:26Z">
+    <test name="Test" duration-ms="59" started-at="2018-08-30T09:03:24Z" finished-at="2018-08-30T09:03:24Z">
+      <class name="First">
+        <test-method status="PASS" signature="ak()[pri:0, instance:First@27a5f880]" name="ak" duration-ms="25" started-at="2018-08-30T09:03:24Z" finished-at="2018-08-30T09:03:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HandleAlerts -->
-      </class> <!-- Alerts -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- ak -->
+      </class> <!-- First -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

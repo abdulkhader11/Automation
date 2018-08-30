@@ -22,7 +22,7 @@ public class AutomationForCart {
 	public void start() throws IOException, InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
+		
 	
 		driver.get("http://automationpractice.com/");
 		Thread.sleep(1000);		
@@ -39,7 +39,7 @@ public class AutomationForCart {
 	public void Login()throws InterruptedException, Throwable {
 		
 		
-		//driver.findElement(By.xpath(".//*[@id='SubmitLogin']")).click();
+		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		driver.findElement(By.xpath(".//a[@title='Women']")).click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
@@ -62,7 +62,7 @@ public class AutomationForCart {
 		
 		driver.findElement(By.xpath(".//input[@id='cgv']")).click();
 		Thread.sleep(1000);
-		//driver.findElement(By.xpath(".//input[@id='cgv']")).click();
+		
 		driver.findElement(By.xpath(".//button[@name='processCarrier']")).click();
 		Thread.sleep(1000);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);

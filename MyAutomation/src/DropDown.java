@@ -26,7 +26,7 @@ public class DropDown {
 	      Thread.sleep(3000);
 		  driver.findElement(By.xpath(".//*[@id='ap_email']")).sendKeys("9964711440");
 		   driver.findElement(By.xpath(".//*[@id='continue']")).click();
-		   driver.findElement(By.xpath(".//*[@id='ap_password']")).sendKeys("Minds123");
+		   driver.findElement(By.xpath(".//*[@id='ap_password']")).sendKeys("123");
 		   driver.findElement(By.xpath(".//*[@id='signInSubmit']")).click();
 		   
 		
