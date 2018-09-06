@@ -72,7 +72,7 @@ public class AutomationForCart {
 		
 			
 	}
-	@AfterTest
+	@Test(enabled=false)
 	public void quit() {
 		
 		driver.quit();
