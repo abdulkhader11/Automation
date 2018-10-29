@@ -95,13 +95,13 @@ import org.testng.annotations.Test;
 				File file=ts.getScreenshotAs(OutputType.FILE);
 				org.apache.commons.io.FileUtils.copyFile(file, new File("E:\\demo.jpeg"));
 				System.out.println("Saved the screenshot");
-				driver.close();
+				//driver.close();
 	
 	}
 	
 		@Test (priority=1)
 		public void userlogin() throws InterruptedException{
-			WebDriver driver=new ChromeDriver();
+			//WebDriver driver=new ChromeDriver();
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 			
 			driver.manage().window().maximize();
