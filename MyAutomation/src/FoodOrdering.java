@@ -358,6 +358,7 @@ WebDriver driver=new ChromeDriver();
 	
 	@Test(priority=2)
 	public void view_order() throws InterruptedException, IOException {
+		//WebDriver driver=new ChromeDriver();
 	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 	
 	driver.manage().window().maximize();

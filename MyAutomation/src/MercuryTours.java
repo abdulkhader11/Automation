@@ -58,25 +58,31 @@ public class MercuryTours {
 		//Address
 		driver.findElement(By.xpath("//input[@name='address1']")).sendKeys("2cross  ");
 		driver.findElement(By.xpath("//input[@name='address2']")).sendKeys("Basveshwar nagar");
+		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		//City
 		driver.findElement(By.xpath("//input[@name='city']")).sendKeys("Gulbarga");
+		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		//State
 		driver.findElement(By.xpath("//input[@name='state']")).sendKeys("Karnataka");
+		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		//Postal code
-		driver.findElement(By.xpath("//input[@name='postalCode']")).sendKeys("98000");	
+		driver.findElement(By.xpath("//input[@name='postalCode']")).sendKeys("98000");
+		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		//Country
 		driver.findElement(By.xpath("html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[12]/td[2]/select")).click();	
 		driver.findElement(By.xpath("html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[12]/td[2]/select/option[232]")).click();
 		
 		//Name
-		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("Aish");	
+		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("Aish");
+		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		//Password	
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("confirm");	
+		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		//Confirm password
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("confirm");	
